@@ -6,18 +6,18 @@ a, sr = librosa.load('sample.wav')
 librosa.display.waveplot(a, sr=sr)
 
 
-#タイトルの付与
+#Giving a title
 plt.title("sample.wav", style = "italic", fontweight = "bold", color = "black", fontsize = 20)
-#ラベルの付与
+#Giving a label
 plt.xlabel("time", color = "black", fontsize = 15)
 plt.ylabel("A", color = "black", fontsize = 15)
-#目盛り幅の調整
+#Adjusting a scale width
 #plt.xlim( , )
 plt.ylim(-0.6, 0.6)
-#目盛りのマス目表示
+#Giving squares
 #plt.grid()
-#より細かい目盛りの付与
+#Giving detail squares
 #plt.minorticks_on()
 
-#グラフの表示
+#Displaying a Graph
 plt.show()
